@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #ffc857;
+  --secondary-color: #f4a300;
+  --text-color: #5c4b3c;
+  --background-color: #f8f4e3;
+  --dark-bg-color: #2e2e38;
+  --font-family-primary: "Roboto", sans-serif;
+  --font-family-secondary: "Playfair Display", serif;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2 {
+  font-family: var(--font-family-secondary);
+  color: var(--primary-color);
+}
+
+* {
+  transition: all 0.3s ease;
+}

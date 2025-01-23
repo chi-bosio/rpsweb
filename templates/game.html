@@ -4,7 +4,14 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col py-5 text-center">
+      <p
+        class="fw-bold text-dark fs-5 fst-italic mb-3 text-center"
+        id="game_goal"
+        style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); padding-top: 10px"
+      >
+        ¡El primero en llegar a 10 puntos gana!
+      </p>
+      <div class="col py-4 text-center">
         <h2>{{.Name}}</h2>
         <p class="fw-bold" id="player_score">0</p>
         <div class="d-grid gap-2 card p-3">
@@ -35,7 +42,7 @@
         </div>
       </div>
 
-      <div class="col py-5 text-center">
+      <div class="col py-4 text-center">
         <h2>Computadora</h2>
         <p class="fw-bold" id="computer_score">0</p>
         <div class="card p-3">

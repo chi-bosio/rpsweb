@@ -1,0 +1,16 @@
+.section-nuevo-juego {
+  background-color: var(--light-bg-color);
+  padding: 60px 20px;
+  border-radius: 15px;
+}
+
+form {
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+h2 {
+  color: var(--text-color);
+}

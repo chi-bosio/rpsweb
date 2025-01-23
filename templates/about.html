@@ -1,48 +1,94 @@
 {{ template "base" . }} {{ define "title" }} RPS web - About {{ end }} {{ define
 "content" }}
 
-<section>
+<section class="section-about py-5">
   <div class="container">
-    <div class="row">
-      <div class="col py-5">
-        <h2 class="py-2">Acerca de Chiara Bosio</h2>
-        <p>
-          Hola, soy Chiara Bosio, una apasionada desarrolladora de software con
-          un amor por los proyectos creativos y desafiantes. Me encanta resolver
-          problemas a través del código, diseñar interfaces interactivas y
-          construir experiencias que conecten con las personas. Siempre estoy en
-          búsqueda de nuevas herramientas y tecnologías que me ayuden a mejorar
-          mis habilidades y a llevar mis ideas al siguiente nivel.
+    <div class="row mb-5">
+      <div class="col text-center">
+        <h2 class="text-dark">Acerca de Piedra, Papel, Tijera</h2>
+        <p class="text-muted">
+          Descubre la historia y la magia detrás de este clásico juego. Aquí
+          podrás conocer más sobre sus orígenes, beneficios y cómo funciona
+          nuestro sitio.
         </p>
-        <p>
-          Además de programar, disfruto explorando cómo el diseño puede
-          transformar la manera en que interactuamos con la tecnología. Creo
-          firmemente que el aprendizaje constante es clave en esta profesión, y
-          por eso me esfuerzo por mantenerme actualizada con las últimas
-          tendencias en desarrollo web, experiencia de usuario y aplicaciones
-          interactivas.
-        </p>
-        <p>
-          Este programa de "Piedra, Papel o Tijera" es un ejemplo de mi enfoque
-          práctico para aprender y compartir. Me emociona crear proyectos como
-          este porque no solo son entretenidos, sino que también me permiten
-          aplicar conceptos importantes como la lógica de programación, la
-          interacción dinámica y el diseño visual. ¡Espero que lo disfrutes
-          tanto como yo disfruté creándolo!
-        </p>
+      </div>
+    </div>
 
-        <ul class="py-3">
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <h3 class="text-primary">Historia del juego</h3>
+        <p class="text-muted">
+          Piedra, Papel, Tijera (o Rock, Paper, Scissors) es un juego simple
+          pero fascinante que tiene raíces históricas en la antigua China y
+          Japón, donde se conocía como "jan-ken". A lo largo de los siglos, este
+          juego ha evolucionado para convertirse en una actividad divertida y
+          estratégica que une a personas de todo el mundo.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div class="history-box p-4 bg-dark text-white rounded shadow-lg">
+          <h4 class="text-warning">Curiosidad histórica</h4>
+          <p>
+            ¿Sabías que en la antigua China, el juego era utilizado como un
+            medio para resolver disputas entre dos personas? ¡Una forma
+            interesante de evitar el conflicto!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <h3 class="text-success">¿Por qué jugar?</h3>
+        <ul class="text-muted">
+          <li>Es una forma divertida de pasar el tiempo.</li>
+          <li>Desarrolla habilidades estratégicas y de pensamiento rápido.</li>
+          <li>Es perfecto para romper el hielo o decidir algo importante.</li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/chiara-bosio-078b9717b/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/chi-bosio" target="_blank">Github</a>
+            ¡No necesitas más que tus manos (o este sitio web) para jugar!
           </li>
         </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="benefits-box p-4 bg-dark text-white rounded shadow-lg">
+          <h4 class="text-warning">Beneficio extra</h4>
+          <p>
+            Este juego no solo es entretenido, sino que puede ayudar a mejorar
+            tu toma de decisiones y agilidad mental, mientras te diviertes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col">
+        <h3 class="text-dark text-center">¿Cómo funciona este sitio?</h3>
+        <p class="text-muted text-center">
+          Este sitio web te permite jugar al clásico Piedra, Papel, Tijera con
+          facilidad. Solo ingresa tu nombre, selecciona tu jugada y compite
+          contra la computadora. ¡Cada partida es única, y cada movimiento
+          cuenta!
+        </p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-6 mb-4">
+        <h4 class="text-primary">¿Listo para empezar?</h4>
+        <p class="text-muted">¡Dirígete a la página principal y juega ahora!</p>
+        <a href="/new" class="btn btn-success btn-lg">
+          <i class="fas fa-play"></i> Jugar Ahora
+        </a>
+      </div>
+      <div class="col-md-6">
+        <h4 class="text-info">¡Invita a tus amigos!</h4>
+        <p class="text-muted">
+          Comparte este sitio con tus amigos y compitan por el título del mejor
+          jugador.
+        </p>
+        <button class="btn btn-primary btn-lg">
+          <i class="fas fa-share"></i> Compartir
+        </button>
       </div>
     </div>
   </div>

@@ -4,6 +4,9 @@ let imgArray = [
   "static/img/hand_scissors.png",
 ];
 
+let playerScore = 0;
+let computerScore = 0;
+
 function choose(x) {
   fetch("/play?c=" + x)
     .then((response) => response.json())
@@ -29,5 +32,42 @@ function choose(x) {
 
       var imgElement = document.getElementById("img_computer");
       imgElement.src = imgArray[data.computer_choice_int];
+
+      playerScore = parseInt(data.player_score);
+      computerScore = parseInt(data.computer_score);
+
+      console.log(
+        "Player score:",
+        playerScore,
+        "Computer score:",
+        computerScore
+      );
+
+      if (playerScore >= 10 || computerScore >= 10) {
+        console.log("Triggering Swal");
+        let winnerMessage =
+          playerScore >= 10
+            ? "¡Felicidades! Has ganado el juego. ¿Quieres jugar de nuevo?"
+            : "¡Lástima! La computadora ha ganado. ¿Quieres jugar de nuevo?";
+
+        Swal.fire({
+          title: "Juego terminado",
+          text: winnerMessage,
+          icon: "question",
+          showCancelButton: true,
+          confirmButtonText: "Sí",
+          cancelButtonText: "No",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            console.log("Reiniciando juego");
+            playerScore = 0;
+            computerScore = 0;
+            location.reload();
+          } else {
+            console.log("Regresando al inicio");
+            window.location.href = "/";
+          }
+        });
+      }
     });
 }
