@@ -98,4 +98,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 ## Autor
 
 **Chiara Bosio**  
-[GitHub](https://github.com/chi-bosio) - [LinkedIn] (https://www.linkedin.com/in/chiara-bosio-078b9717b/)
+[GitHub](https://github.com/chi-bosio) - [LinkedIn](https://www.linkedin.com/in/chiara-bosio-078b9717b/)
