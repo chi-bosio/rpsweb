@@ -1,28 +1,71 @@
 {{ template "base" . }} {{ define "title" }} RPS web - Nuevo juego {{ end }} {{
 define "content" }}
-<section class="section-nuevo-juego" id="new-game-section">
+
+<section class="section-nuevo-juego">
   <div class="container">
-    <div class="row justify-content-center" id="game-prep">
-      <h2 class="text-center py-4" id="game-title">¡Prepárate para jugar!</h2>
-      <p class="text-center mb-4" id="game-description">
-        Ingrese su nombre para personalizar el juego.
+    <div class="row justify-content-center">
+      <h2 class="text-center py-4">¡Prepárate para jugar!</h2>
+      <p class="text-center mb-4">
+        Ingrese su nombre para personalizar la experiencia. ¡Es hora de
+        divertirse con Rock, Paper, Scissors!
       </p>
-      <div class="col-md-6" id="input-section">
-        <input
-          type="text"
-          class="form-control"
-          id="player-name"
-          placeholder="Tu nombre"
-        />
-        <button
-          class="btn btn-primary btn-lg mt-3"
-          onclick="startGame()"
-          id="start-btn"
-        >
-          Comenzar juego
+
+      <form action="/game" method="post" class="col-md-6 p-4 rounded shadow">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <div class="input-group">
+            <span class="input-group-text">
+              <i class="fas fa-user"></i>
+            </span>
+            <input
+              type="text"
+              required
+              placeholder="Ingrese su nombre"
+              name="name"
+              id="name"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="d-grid gap-2 py-4">
+          <button type="submit" class="btn btn-success btn-lg">
+            <i class="fas fa-play"></i> Empezar a jugar
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h3 class="text-muted">¿Sabías que...?</h3>
+        <p class="fst-italic">
+          Rock, Paper, Scissors es un juego que existe desde hace siglos, ¡y ha
+          unido a personas de todo el mundo! ¿Estás listo para unirte a la
+          diversión?
+        </p>
+        <a href="/about" class="btn btn-info mt-3">
+          <i class="fas fa-info-circle"></i> Aprende más
+        </a>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6 text-center">
+        <h3 class="text-muted">Recomendaciones</h3>
+        <p>¿Nuevo en este juego? Aquí hay algunos consejos para empezar:</p>
+        <ul class="text-start">
+          <li>Elige tus movimientos con estrategia.</li>
+          <li>¡Observa cómo juega tu oponente para anticiparte!</li>
+          <li>Recuerda: ¡divertirse es lo más importante!</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <h3 class="text-muted">¡Comparte tu experiencia!</h3>
+        <p>Invita a tus amigos a jugar y haz que la experiencia sea aún más emocionante. Comparte el enlace y desafíalos a un duelo.</p>
+        <button class="btn btn-primary mt-3">
+          <i class="fas fa-share"></i> Compartir
         </button>
       </div>
     </div>
+  </div>
   </div>
 </section>
 
