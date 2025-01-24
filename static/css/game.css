@@ -1,0 +1,127 @@
+#game-section {
+  padding: 40px 0;
+}
+
+#game_goal {
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#player-name,
+#computer-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#player_score,
+#computer_score {
+  font-size: 2rem;
+}
+
+#player-options button,
+#computer-options button {
+  font-size: 1.25rem;
+  padding: 15px;
+}
+
+#results-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#results-list {
+  margin-bottom: 20px;
+}
+
+#new-game-btn-container {
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  #game-section {
+    padding: 30px 0;
+  }
+
+  #game_goal {
+    font-size: 1.125rem;
+    padding-top: 8px;
+  }
+
+  #player-name,
+  #computer-name {
+    font-size: 1.25rem;
+  }
+
+  #player_score,
+  #computer_score {
+    font-size: 1.75rem;
+  }
+
+  #player-options button,
+  #computer-options button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  #player-options img {
+    width: 45px;
+  }
+
+  #results-title {
+    font-size: 1.75rem;
+  }
+
+  #new-game-btn-container {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #game-section {
+    padding: 20px 0;
+  }
+
+  #game_goal {
+    font-size: 1rem;
+    padding-top: 5px;
+  }
+
+  #player-name,
+  #computer-name {
+    font-size: 1.125rem;
+  }
+
+  #player_score,
+  #computer_score {
+    font-size: 1.5rem;
+  }
+
+  #player-options button,
+  #computer-options button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  #player-options img,
+  #computer-options img {
+    width: 40px;
+  }
+
+  .d-grid {
+    text-align: center;
+  }
+
+  #results-title {
+    font-size: 1.5rem;
+  }
+
+  #new-game-btn-container {
+    margin-top: 10px;
+  }
+
+  #img_computer {
+    width: 150px;
+  }
+}
