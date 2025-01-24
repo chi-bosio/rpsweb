@@ -1,0 +1,150 @@
+/* Estilos generales */
+#about-section {
+  padding: 5rem 0;
+}
+
+#about-title {
+  font-size: 2.5rem;
+  color: #212529;
+}
+
+#about-description {
+  font-size: 1.125rem;
+  color: #6c757d;
+}
+
+#history-section,
+#benefits-section,
+#how-site-works {
+  font-size: 1.125rem;
+  color: #6c757d;
+}
+
+#history-box,
+#benefits-box {
+  padding: 2rem;
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#history-box h4,
+#benefits-box h4 {
+  color: #ffc107;
+}
+
+#start-btn,
+#share-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+  #about-title {
+    font-size: 2rem;
+  }
+
+  #about-description {
+    font-size: 1rem;
+  }
+
+  #history-section,
+  #benefits-section {
+    font-size: 1rem;
+  }
+
+  #history-box,
+  #benefits-box {
+    padding: 1.5rem;
+  }
+
+  #ready-title,
+  #invite-title {
+    font-size: 1.5rem;
+  }
+
+  #start-btn,
+  #share-btn {
+    font-size: 1.125rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #about-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  #about-description {
+    font-size: 0.875rem;
+  }
+
+  #history-section,
+  #benefits-section {
+    font-size: 0.875rem;
+  }
+
+  #history-box,
+  #benefits-box {
+    padding: 1rem;
+  }
+
+  #ready-title,
+  #invite-title {
+    font-size: 1.25rem;
+  }
+
+  #start-btn,
+  #share-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  #history-section,
+  #benefits-section {
+    margin-bottom: 2rem;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #about-title {
+    font-size: 1.5rem;
+  }
+
+  #about-description {
+    font-size: 0.875rem;
+  }
+
+  #history-box,
+  #benefits-box {
+    padding: 1rem;
+  }
+
+  #ready-title,
+  #invite-title {
+    font-size: 1.125rem;
+  }
+
+  #start-btn,
+  #share-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .row {
+    padding: 0 1rem;
+  }
+
+  .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
