@@ -1,58 +1,91 @@
+/* Estilo general del footer */
 footer {
   background-color: var(--dark-bg-color);
   color: #f7fff7;
-  padding: 40px 0 20px 0;
+  padding: 35px 0;
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
 
+/* Contenedor principal del footer */
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
-.footer-links {
-  margin-left: 0;
-}
-
+/* Estilo para los enlaces del footer */
 .footer-links ul {
   list-style: none;
   padding: 0;
-  margin-left: -18vw;
-}
-
-.footer-links ul li {
-  display: inline-block;
-  margin: 0 10px;
+  margin: 0;
+  display: flex;
+  gap: 15px;
 }
 
 .footer-links ul li a {
   color: #d9744e;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .footer-links ul li a:hover {
   color: var(--secondary-color);
 }
 
+/* Iconos de redes sociales */
 .footer-social {
   display: flex;
-  justify-content: flex-end;
-  margin-right: -15vw;
+  gap: 15px;
 }
 
 .footer-social a {
   color: #f7fff7;
   font-size: 20px;
-  margin: 0 10px;
   transition: color 0.3s ease;
 }
 
 .footer-social a:hover {
   color: var(--primary-color);
+}
+
+/* Responsividad */
+
+/* Pantallas medianas (tablets, entre 768px y 1024px) */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-links ul {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+/* Pantallas pequeñas (móviles, menor a 768px) */
+@media (max-width: 768px) {
+  .footer-links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-social a {
+    font-size: 18px; /* Ajustar tamaño de los iconos */
+  }
 }
