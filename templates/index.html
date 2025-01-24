@@ -1,42 +1,51 @@
 {{ template "base" . }} {{ define "title" }} RPS web - Inicio {{ end }} {{
 define "content" }}
 
-<section class="container oy-5">
+<section class="container oy-5" id="index-section">
   <h1 class="display-4 fw-bold py-3 text-center">
     Bienvenido a Piedra, Papel o Tijera
   </h1>
-  <div class="row justify-content-center g-0">
-    <div class="col-md-4 text-center">
+  <div class="d-flex justify-content-center flex-wrap-0 gap-3" id="index-icons">
+    <div class="text-center">
       <img
         src="static/img/rock_icon.png"
         alt="rock_icon"
         class="img-fluid w-50 mb-0"
+        id="rock-icon"
       />
     </div>
-    <div class="col-md-4">
+    <div class="text-center">
       <img
         src="static/img/paper_icon.png"
         alt="paper_icon"
         class="img-fluid w-50 mb-0"
+        id="paper-icon"
       />
     </div>
-    <div class="col-md-4">
+    <div class="text-center">
       <img
         src="static/img/scissors_icon.png"
         alt="scissors_icon"
         class="img-fluid w-50 mb-0"
+        id="scissors-icon"
       />
     </div>
-    <p class="lead text-center fs-2 py-4">Juega contra la computadora</p>
+  </div>
+  <div class="row justify-content-center g-0">
+    <p class="lead text-center fs-2 py-4" id="index-description">
+      Juega contra la computadora
+    </p>
     <p class="text-center">
-      <a href="/new" class="btn btn-success btn-lg">Nuevo juego</a>
+      <a href="/new" class="btn btn-success btn-lg" id="new-game-btn"
+        >Nuevo juego</a
+      >
     </p>
   </div>
 </section>
 
-<section class="container py-5">
+<section class="container py-5" id="how-to-play">
   <h2 class="mb-4">¿Cómo se juega?</h2>
-  <ol class="list-group list-group-numbered">
+  <ol class="list-group list-group-numbered" id="game-steps">
     <li class="list-group-item">Crear un nuevo juego</li>
     <li class="list-group-item">Ingresar su nombre</li>
     <li class="list-group-item">Comenzar a jugar</li>

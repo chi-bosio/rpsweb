@@ -1,12 +1,14 @@
 {{ template "base" . }} {{ define "title" }} RPS web - About {{ end }} {{ define
 "content" }}
 
-<section class="section-about py-5">
+<section class="section-about py-5" id="about-section">
   <div class="container">
     <div class="row mb-5">
       <div class="col text-center">
-        <h2 class="text-dark">Acerca de Piedra, Papel, Tijera</h2>
-        <p class="text-muted">
+        <h2 class="text-dark" id="about-title">
+          Acerca de Piedra, Papel, Tijera
+        </h2>
+        <p class="text-muted" id="about-description">
           Descubre la historia y la magia detrás de este clásico juego. Aquí
           podrás conocer más sobre sus orígenes, beneficios y cómo funciona
           nuestro sitio.
@@ -15,9 +17,9 @@
     </div>
 
     <div class="row mb-5">
-      <div class="col-md-6">
-        <h3 class="text-primary">Historia del juego</h3>
-        <p class="text-muted">
+      <div class="col-md-6" id="history-section">
+        <h3 class="text-primary" id="history-title">Historia del juego</h3>
+        <p class="text-muted" id="history-description">
           Piedra, Papel, Tijera (o Rock, Paper, Scissors) es un juego simple
           pero fascinante que tiene raíces históricas en la antigua China y
           Japón, donde se conocía como "jan-ken". A lo largo de los siglos, este
@@ -25,10 +27,13 @@
           estratégica que une a personas de todo el mundo.
         </p>
       </div>
-      <div class="col-md-6">
-        <div class="history-box p-4 bg-dark text-white rounded shadow-lg">
+      <div class="col-md-6" id="history-box-container">
+        <div
+          class="history-box p-4 bg-dark text-white rounded shadow-lg"
+          id="history-box"
+        >
           <h4 class="text-warning">Curiosidad histórica</h4>
-          <p>
+          <p id="history-fact">
             ¿Sabías que en la antigua China, el juego era utilizado como un
             medio para resolver disputas entre dos personas? ¡Una forma
             interesante de evitar el conflicto!
@@ -38,9 +43,9 @@
     </div>
 
     <div class="row mb-5">
-      <div class="col-md-6">
-        <h3 class="text-success">¿Por qué jugar?</h3>
-        <ul class="text-muted">
+      <div class="col-md-6" id="benefits-section">
+        <h3 class="text-success" id="benefits-title">¿Por qué jugar?</h3>
+        <ul class="text-muted" id="benefits-list">
           <li>Es una forma divertida de pasar el tiempo.</li>
           <li>Desarrolla habilidades estratégicas y de pensamiento rápido.</li>
           <li>Es perfecto para romper el hielo o decidir algo importante.</li>
@@ -49,10 +54,13 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-6">
-        <div class="benefits-box p-4 bg-dark text-white rounded shadow-lg">
+      <div class="col-md-6" id="benefits-box-container">
+        <div
+          class="benefits-box p-4 bg-dark text-white rounded shadow-lg"
+          id="benefits-box"
+        >
           <h4 class="text-warning">Beneficio extra</h4>
-          <p>
+          <p id="extra-benefit">
             Este juego no solo es entretenido, sino que puede ayudar a mejorar
             tu toma de decisiones y agilidad mental, mientras te diviertes.
           </p>
@@ -61,9 +69,11 @@
     </div>
 
     <div class="row mb-5">
-      <div class="col">
-        <h3 class="text-dark text-center">¿Cómo funciona este sitio?</h3>
-        <p class="text-muted text-center">
+      <div class="col" id="how-site-works">
+        <h3 class="text-dark text-center" id="how-it-works-title">
+          ¿Cómo funciona este sitio?
+        </h3>
+        <p class="text-muted text-center" id="how-it-works-description">
           Este sitio web te permite jugar al clásico Piedra, Papel, Tijera con
           facilidad. Solo ingresa tu nombre, selecciona tu jugada y compite
           contra la computadora. ¡Cada partida es única, y cada movimiento
@@ -72,21 +82,23 @@
       </div>
     </div>
 
-    <div class="row text-center">
-      <div class="col-md-6 mb-4">
-        <h4 class="text-primary">¿Listo para empezar?</h4>
-        <p class="text-muted">¡Dirígete a la página principal y juega ahora!</p>
-        <a href="/new" class="btn btn-success btn-lg">
+    <div class="row text-center" id="start-section">
+      <div class="col-md-6 mb-4" id="start-section-left">
+        <h4 class="text-primary" id="ready-title">¿Listo para empezar?</h4>
+        <p class="text-muted" id="start-description">
+          ¡Dirígete a la página principal y juega ahora!
+        </p>
+        <a href="/new" class="btn btn-success btn-lg" id="start-btn">
           <i class="fas fa-play"></i> Jugar Ahora
         </a>
       </div>
-      <div class="col-md-6">
-        <h4 class="text-info">¡Invita a tus amigos!</h4>
-        <p class="text-muted">
+      <div class="col-md-6" id="invite-section">
+        <h4 class="text-info" id="invite-title">¡Invita a tus amigos!</h4>
+        <p class="text-muted" id="invite-description">
           Comparte este sitio con tus amigos y compitan por el título del mejor
           jugador.
         </p>
-        <button class="btn btn-primary btn-lg">
+        <button class="btn btn-primary btn-lg" id="share-btn">
           <i class="fas fa-share"></i> Compartir
         </button>
       </div>

@@ -1,7 +1,7 @@
 {{ template "base" . }} {{ define "title" }} RPS web - Jugar {{ end }} {{ define
 "content" }}
 
-<section>
+<section id="game-section">
   <div class="container">
     <div class="row">
       <p
@@ -11,42 +11,60 @@
       >
         ¡El primero en llegar a 10 puntos gana!
       </p>
-      <div class="col py-4 text-center">
-        <h2>{{.Name}}</h2>
+      <div class="col py-4 text-center" id="player-section">
+        <h2 id="player-name">{{.Name}}</h2>
         <p class="fw-bold" id="player_score">0</p>
-        <div class="d-grid gap-2 card p-3">
-          <button class="btn btn-outline-success" onclick="choose(0)">
+        <div class="d-grid gap-2 card p-3" id="player-options">
+          <button
+            class="btn btn-outline-success"
+            onclick="choose(0)"
+            id="rock-btn"
+          >
             <img
               src="static/img/hand_rock.png"
               alt="hand_rock"
               width="50"
               class="img-fluid"
+              id="rock-img"
             />
           </button>
-          <button class="btn btn-outline-success" onclick="choose(1);">
+          <button
+            class="btn btn-outline-success"
+            onclick="choose(1);"
+            id="paper-btn"
+          >
             <img
               src="static/img/hand_paper.png"
               alt="hand_paper"
               width="50"
               class="img-fluid"
+              id="paper-img"
             />
           </button>
-          <button class="btn btn-outline-success" onclick="choose(2);">
+          <button
+            class="btn btn-outline-success"
+            onclick="choose(2);"
+            id="scissors-btn"
+          >
             <img
               src="static/img/hand_scissors.png"
               alt="hand_scissors"
               width="50"
               class="img-fluid"
+              id="scissors-img"
             />
           </button>
         </div>
       </div>
 
-      <div class="col py-4 text-center">
-        <h2>Computadora</h2>
+      <div class="col py-4 text-center" id="computer-section">
+        <h2 id="computer-name">Computadora</h2>
         <p class="fw-bold" id="computer_score">0</p>
-        <div class="card p-3">
-          <div class="d-flex justify-content-center">
+        <div class="card p-3" id="computer-options">
+          <div
+            class="d-flex justify-content-center"
+            id="computer-img-container"
+          >
             <img
               src="static/img/reload_icon.png"
               id="img_computer"
@@ -61,20 +79,22 @@
   </div>
 </section>
 
-<section>
+<section id="results-section">
   <div class="container">
     <div class="row">
-      <h2>Resultados</h2>
-      <ul class="list-group list-group-flush">
+      <h2 id="results-title">Resultados</h2>
+      <ul class="list-group list-group-flush" id="results-list">
         <li class="list-group-item" id="player_choice">&nbsp;</li>
         <li class="list-group-item" id="computer_choice">&nbsp;</li>
         <li class="list-group-item text-danger" id="round_result">&nbsp;</li>
         <li class="list-group-item text-success" id="round_message">&nbsp;</li>
       </ul>
     </div>
-    <div class="row text-center">
-      <div class="col py-3">
-        <a href="/new" class="btn btn-success btn-lg">Nuevo juego</a>
+    <div class="row text-center" id="new-game-section">
+      <div class="col py-3" id="new-game-btn-container">
+        <a href="/new" class="btn btn-success btn-lg" id="new-game-btn">
+          Nuevo juego
+        </a>
       </div>
     </div>
   </div>
